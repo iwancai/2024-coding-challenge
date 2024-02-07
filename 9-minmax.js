@@ -4,28 +4,31 @@
 
 // https://www.codewars.com/kata/577a98a6ae28071780000989/
 
-var min = function(list){
+// var min = function(list){
     
-    let minValue = list[0]
+//     let minValue = list[0]
     
-    for(i = 1; i < list.length; i++) {
-        if(minValue > list[i]){
-            minValue = list[i]
-        }
-    }
-    return minValue;
-}
+//     for(i = 1; i < list.length; i++) {
+//         if(minValue > list[i]){
+//             minValue = list[i]
+//         }
+//     }
+//     return minValue;
+// }   
 
-var max = function(list){
-    let maxValue = list[0]
+// var max = function(list){
+//     let maxValue = list[0]
     
-    for(i = 1; i < list.length; i++) {
-        if(maxValue < list[i]){
-            maxValue = list[i]
-        }
-    }
-    return maxValue;
-}
+//     for(i = 1; i < list.length; i++) {
+//         if(maxValue < list[i]){
+//             maxValue = list[i]
+//         }
+//     }
+//     return maxValue;
+// }
+
+const min = (list) => Math.min(...list)
+const max = (list) => Math.max(...list)
 
 
 console.log(min([-52, 56, 30, 29, -54, 0, -110]))
